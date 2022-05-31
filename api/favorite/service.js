@@ -19,9 +19,9 @@ module.exports = {
         pool.query("INSERT INTO favorite (id_user, EoNumber, Name, PublishDateShort) VALUES (?,?,?,?)",
         [
             data.id_user,
-            data.number,
-            data.name,
-            data.dateShort
+            data.EoNumber,
+            data.Name,
+            data.PublishDateShort
         ],
         (error, results, fields) => {
             if (error){    
