@@ -35,7 +35,7 @@ app.use(express.json());
 app.use("/api/favorite", favoriteRouter);
 app.use("/api/users", userRouter);
 
-app.listen(4000);
+app.listen(5000);
 console.log("Сервер на порту 4000 запущен");
 
 setInterval(ReadData, 10000 * 60 * 60);
